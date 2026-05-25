@@ -1,0 +1,179 @@
+/* Design System CSS Module */
+
+/* Page Layout */
+.pageContainer {
+  padding: 0;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.pageTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Card Styles */
+.cardSection {
+  margin-bottom: 16px;
+}
+
+.cardExtra {
+  display: flex;
+  gap: 8px;
+}
+
+/* Table Styles */
+.tableActions {
+  display: flex;
+  gap: 4px;
+}
+
+/* Form Styles */
+.formSection {
+  margin-bottom: 24px;
+}
+
+.formSectionTitle {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.formRow {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.formRow > * {
+  flex: 1;
+}
+
+/* Status Badge */
+.statusTag {
+  min-width: 60px;
+  text-align: center;
+}
+
+/* Filter Bar */
+.filterBar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filterBar > * {
+  min-width: 120px;
+}
+
+/* Description List */
+.descList dt {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.descList dd {
+  margin-bottom: 8px;
+  margin-left: 0;
+}
+
+/* Diff View */
+.diffContainer {
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.diffItem {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.diffItem:last-child {
+  border-bottom: none;
+}
+
+.diffAdded {
+  background-color: #f6ffed;
+  border-left: 3px solid #52c41a;
+}
+
+.diffRemoved {
+  background-color: #fff2f0;
+  border-left: 3px solid #ff4d4f;
+}
+
+.diffModified {
+  background-color: #fff7e6;
+  border-left: 3px solid #faad14;
+}
+
+/* Sidebar Enhancements */
+.sidebarLogo {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #303030;
+}
+
+/* Header */
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Review Items Builder */
+.itemCard {
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: #fafafa;
+}
+
+.itemCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* Doc Blocks Editor */
+.blockCard {
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+  }
+
+  .filterBar {
+    flex-direction: column;
+  }
+
+  .pageHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
